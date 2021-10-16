@@ -31,17 +31,17 @@ mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/dpvpn09/dpvpnv/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ssr.sh && chmod +x ssr.sh && ./ssr.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/sodosok.sh && chmod +x sodosok.sh && ./sodosok.sh
 #installwg
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/wg.sh && chmod +x wg.sh && ./wg.sh
 #install v2ray
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ins-vt.sh && chmod +x ins-vt.sh && ./ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh
 wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/update.sh && chmod +x update.sh && ./update.sh
 wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/up-menu.sh && chmod +x up-menu.sh && ./up-menu.sh
