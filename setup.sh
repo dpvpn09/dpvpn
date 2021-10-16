@@ -29,22 +29,31 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget https://raw.githubusercontent.com/dpvpn09/dpvpnv/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ssh-vpn.sh && chmod +x ssh-vpn.sh &&  ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/sstp.sh && chmod +x sstp.sh &&  ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ssr.sh && chmod +x ssr.sh && ./ssr.sh
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/sodosok.sh && chmod +x sodosok.sh && ./sodosok.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ssr.sh && chmod +x ssr.sh &&  ./ssr.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/sodosok.sh && chmod +x sodosok.sh &&  ./sodosok.sh
 #installwg
 wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/wg.sh && chmod +x wg.sh && ./wg.sh
 #install v2ray
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ins-vt.sh && chmod +x ins-vt.sh && ./ins-vt.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ins-vt.sh && chmod +x ins-vt.sh &&  ./ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/ipsec.sh && chmod +x ipsec.sh &&  ./ipsec.sh
 wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
+# Set Index
+cd /home/vps/public_html
+wget https://raw.githubusercontent.com/dpvpn09/cekdulu/main/index.html
+# Encrypt
+cd
+wget https://raw.githubusercontent.com/dpvpn09/cekdulu/main/encrypt.sh && chmod +x encrypt.sh && ./encrypt.sh
+# update menu
 wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/update.sh && chmod +x update.sh && ./update.sh
 wget https://raw.githubusercontent.com/dpvpn09/dpvpn/main/up-menu.sh && chmod +x up-menu.sh && ./up-menu.sh
+rm -f /root/encrypt.sh
 rm -f /root/ssh-vpn.sh
 rm -f /root/weleh.sh
 rm -f /root/sstp.sh
@@ -87,7 +96,7 @@ echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
 echo "   - Stunnel4                : 777"  | tee -a log-install.txt
 echo "   - Dropbear                : 445, 990"  | tee -a log-install.txt
-echo "   - Websocket Http/s        : 8880, 443" | tee -a log-install.txt
+echo "   - Websocket Http's        : 443, 8880" | tee -a log-install.txt
 echo "   - Squid Proxy             : 3128, 8080(limit to IP Server)"  | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
 echo "   - Nginx                   : 81"  | tee -a log-install.txt
