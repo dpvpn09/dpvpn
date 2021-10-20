@@ -50,6 +50,7 @@ wget -O swap "https://raw.githubusercontent.com/dpvpn09/cekdulu/main/swapkvm.sh"
 wget -O upgrade-mn "https://raw.githubusercontent.com/dpvpn09/cekdulu/main/up-menu.sh"
 wget -O backup "https://raw.githubusercontent.com/dpvpn09/cekdulu/main/backup.sh"
 wget -O autobackup "https://raw.githubusercontent.com/dpvpn09/cekdulu/main/autobackup.sh"
+wget -O running "https://raw.githubusercontent.com/dpvpn09/dpvpn2/main/men/running.sh"
 chmod +x add-host
 chmod +x usernew
 chmod +x trial
@@ -84,6 +85,7 @@ chmod +x swap
 chmod +x upgrade-mn
 chmod +x backup
 chmod +x autobackup
+chmod +x running
 wget -O /usr/bin/ssr https://raw.githubusercontent.com/dpvpn09/cekdulu/main/ssrmu.sh && chmod +x /usr/bin/ssr
 wget -O /usr/bin/add-ssr https://raw.githubusercontent.com/dpvpn09/cekdulu/main/add-ssr.sh && chmod +x /usr/bin/add-ssr
 wget -O /usr/bin/del-ssr https://raw.githubusercontent.com/dpvpn09/cekdulu/main/del-ssr.sh && chmod +x /usr/bin/del-ssr
