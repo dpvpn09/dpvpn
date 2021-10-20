@@ -388,6 +388,7 @@ wget -O cfd "https://raw.githubusercontent.com/dpvpn09/dpvpn/main/cfd.sh"
 wget -O cff "https://raw.githubusercontent.com/dpvpn09/dpvpn/main/cff.sh"
 wget -O cfh "https://raw.githubusercontent.com/dpvpn09/dpvpn/main/cfh.sh"
 wget -O upgrade-mn "https://raw.githubusercontent.com/dpvpn09/dpvpn/main/up-menu.sh"
+wget -O running "https://raw.githubusercontent.com/dpvpn09/dpvpn2/main/men/running.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
@@ -423,6 +424,7 @@ chmod +x cff
 chmod +x cfh
 chmod +x autoreboot
 chmod +x upgrade-mn
+chmod +x running
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 # remove unnecessary files
 cd
